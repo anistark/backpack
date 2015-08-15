@@ -7,6 +7,7 @@ Steps:
 
 ```
  meteor add materialize:materialize
+ meteor add iron:router
 ```
 
 References:

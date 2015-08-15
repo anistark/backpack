@@ -1,0 +1,9 @@
+## Config Files
+client/config/config.js
+
+## Other Node modules
+public/node_modules
+
+## Junk Files
+.DS_Store
+

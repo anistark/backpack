@@ -1,1 +1,21 @@
 /* Main css File */
+
+.sideNav{
+width: 73px;
+border-right: 1px solid #ececec;
+background-color: #f8f8f8;
+float: left;
+height: 100%;
+padding: 12px 12px 24px 17px;
+position: fixed;
+z-index: 200;
+box-sizing: border-box;
+}
+
+.row{
+margin: 0px;
+}
+
+.notesMain{
+margin-left: 73px;
+}

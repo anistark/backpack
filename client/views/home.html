@@ -1,7 +1,11 @@
 <template name="viewsHome">
 	<div class="row">
-		<div class="col s1 grey lighten-3">
+		<div class="col-md-1 sideNav">
 			<br>
+			<img src="/favicon.ico" alt="logo" width="40" height="40">
+			<br/>
+			<br/>
+			<br/>
 			<a class="btn-floating waves-effect waves-light green" href="/notes/add"><i class="material-icons">add</i></a><br><br>
 			<a class="btn-floating waves-effect waves-light green"><i class="material-icons">search</i></a><br><br>
 			<a class="btn-floating waves-effect waves-light green"><i class="material-icons">chat</i></a><br><br>
@@ -13,7 +17,7 @@
 			<hr>
 			<a class="btn-floating waves-effect waves-light green"><i class="material-icons">person</i></a><br><br>
 		</div>
-		<div class="col s4 grey lighten-1">
+		<div class="col-md-4 notesMain">
 			<h3>Notes</h3>
 			<ul class="collapsible" data-collapsible="accordion">
 				<li>
@@ -30,7 +34,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="col s7 grey lighten-5">
+		<div class="col-md-7 noteEditor">
 			<h4>User's Notebook</h4>
 			<form>
 				<textarea name="editor1"></textarea>

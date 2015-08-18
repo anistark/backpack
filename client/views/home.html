@@ -1,8 +1,8 @@
 <template name="viewsHome">
 	<div class="row">
 		<div class="col-md-1 sideNav">
-			<br>
-			<img src="/favicon.ico" alt="logo" width="40" height="40">
+			<img src="/logo.png" alt="logo">
+			<br/>
 			<br/>
 			<br/>
 			<br/>
@@ -18,21 +18,28 @@
 			<a class="btn-floating waves-effect waves-light green"><i class="material-icons">person</i></a><br><br>
 		</div>
 		<div class="col-md-4 notesMain">
-			<h3>Notes</h3>
-			<ul class="collapsible" data-collapsible="accordion">
-				<li>
-					<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-					<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-				</li>
-				<li>
-					<div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-					<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-				</li>
-				<li>
-					<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-					<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-				</li>
-			</ul>
+			<div class="row notesNav">
+				<div class="col-md-12 notesMainTitle">
+					<p>NOTES</p>
+				</div>
+				<div class="col-md-8">
+					<p>3 notes</p>
+				</div>
+				<div class="col-md-4 option-dropdown">
+					<p>Options <i class="glyphicon glyphicon-chevron-down"></i></p>				
+				</div>
+			</div>
+			<div class="row notesContent">
+				<ul>
+					<li class="active notesContainer">
+						<div class="row notes">
+							<p class="noteTitle">Getting Started</p>
+							<p class="noteTime">10/27/2014</p>
+							<p class="noteTyped">Put everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="col-md-7 noteEditor">
 			<h4>User's Notebook</h4>

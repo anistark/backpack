@@ -3,6 +3,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
+	position: fixed;
 }
 
 .sideNav{
@@ -28,7 +29,6 @@ min-height: 800px;
 padding-left: 0px;
 padding-right: 0px;
 width: 458px;
-height: 110px;
 }
 
 
@@ -57,7 +57,7 @@ color: #878787;
 	border-bottom : 1px solid #ececec;
 	border-right: 1px solid #ececec;
 	position: fixed;
-	width: 458px;
+	min-width: 458px;
 	z-index: 99;
 }
 
@@ -87,6 +87,7 @@ color: #878787;
 .notesContent{
 	margin-top: 106px;
 	z-index: 10;
+	overflow-y : scroll;
 }
 
 .notesContent > ul > li.active{
@@ -130,6 +131,32 @@ color: #878787;
     transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out, width 0.2s ease-in-out;
 }
 
-.notesContainer:hover > .noteTitle, .notesContainer:hover > .noteTime, .notesContainer:hover > .noteTyped{
+.notesContainer:hover .noteTitle, .notesContainer:hover .noteTime, .notesContainer:hover .noteTyped{
 	color: #fff;
+}
+
+.noteWritingNav{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.noteWritingNav ul{
+	display: block;
+}
+
+.noteWritingNav ul li{
+	display: inline-block;
+}
+
+.noteWritingNav ul li i{
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 18px;
+	color: #878787;
+}
+
+.noteEditor{
+	margin-left: 531px;
+	position: fixed;
+	min-width: 889px;
 }

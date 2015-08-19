@@ -38,15 +38,77 @@
 							<p class="noteTyped">Put everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.</p>
 						</div>
 					</li>
+					<li class="notesContainer">
+						<div class="row notes">
+							<p class="noteTitle">Getting Started</p>
+							<p class="noteTime">10/27/2014</p>
+							<p class="noteTyped">Put everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.</p>
+						</div>
+					</li>
+					<li class="notesContainer">
+						<div class="row notes">
+							<p class="noteTitle">Getting Started</p>
+							<p class="noteTime">10/27/2014</p>
+							<p class="noteTyped">Put everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.</p>
+						</div>
+					</li>
+					<li class="notesContainer">
+						<div class="row notes">
+							<p class="noteTitle">Getting Started</p>
+							<p class="noteTime">10/27/2014</p>
+							<p class="noteTyped">Put everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.</p>
+						</div>
+					</li>
+					<li class="notesContainer">
+						<div class="row notes">
+							<p class="noteTitle">Getting Started</p>
+							<p class="noteTime">10/27/2014</p>
+							<p class="noteTyped">Put everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.</p>
+						</div>
+					</li>
+					<li class="notesContainer">
+						<div class="row notes">
+							<p class="noteTitle">Getting Started</p>
+							<p class="noteTime">10/27/2014</p>
+							<p class="noteTyped">Put everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.</p>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="col-md-7 noteEditor">
-			<h4>User's Notebook</h4>
+			<div class="row noteWritingNav">
+			<div class="col-md-8">
+				<ul>
+					<li><i class="glyphicon glyphicon-time"></i></li>
+					<li><i class="glyphicon glyphicon-star-empty"></i></li>
+					<li><i class="glyphicon glyphicon-info-sign"></i></li>
+					<li><i class="glyphicon glyphicon-trash"></i></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+			</div>
+			<h5>Notebook Name</h5>
 			<form>
 				<textarea name="editor1"></textarea>
 				<script>
-					CKEDITOR.replace( 'editor1' );
+					CKEDITOR.replace( 'editor1',{
+						enterMode : CKEDITOR.ENTER_P,
+			            shiftEnterMode: CKEDITOR.ENTER_BR,
+			            entities: 'false',
+			            entities_additional : '',
+			            entities_greek : 'false',
+			            entities_latin : 'false',
+			            height: '500',
+			            resize_enabled : false,
+			            resize_maxHeight : '300',
+			            resize_maxWidth : '948',
+			            resize_minHeight: '200',
+			            toolbar:  'Basic',
+			            uiColor:  '#ffffff'
+					});
 				</script>
 			</form>
 		</div>

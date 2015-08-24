@@ -8,6 +8,7 @@ Steps:
 ```
  meteor add materialize:materialize
  meteor add iron:router
+ meteor add accounts-ui accounts-base accounts-password
 ```
 
 References:

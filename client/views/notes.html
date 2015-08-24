@@ -1,8 +1,23 @@
 <template name="viewsNotes">
 	<form>
-		<textarea name="editor1"></textarea>
+		<textarea name="notesEditor" id="notesEditor"></textarea>
 		<script>
-			CKEDITOR.replace( 'editor1' );
+			CKEDITOR.replace( 'notesEditor',{
+				enterMode : CKEDITOR.ENTER_P,
+				shiftEnterMode: CKEDITOR.ENTER_BR,
+				entities: 'false',
+				entities_additional : '',
+				entities_greek : 'false',
+				entities_latin : 'false',
+				height: '500',
+				resize_enabled : false,
+				resize_maxHeight : '300',
+				resize_maxWidth : '948',
+				resize_minHeight: '200',
+				toolbar:  'Basic',
+				uiColor:  '#ffffff'
+			});
 		</script>
+		<input type="submit" name="submit" value="Submit">
 	</form>
 </template>

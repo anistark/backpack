@@ -11,3 +11,7 @@ twbs:bootstrap
 materialize:materialize
 iron:router
 jquery
+accounts-ui
+accounts-base
+accounts-password
+accounts-google

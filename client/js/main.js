@@ -1,5 +1,3 @@
-Notes = new Meteor.Collection('notes');
-
 Template.viewsNotes.events({
 	'submit form': function(event){
 		event.preventDefault();

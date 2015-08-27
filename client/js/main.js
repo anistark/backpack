@@ -25,6 +25,23 @@ Template.viewsNotes.events({
 	}
 });
 
+Meteor.subscribe('notes');
+
+Template.viewsNotesList.helpers({
+	'notes': function(){
+		// var currentUserId = Meteor.userId();
+		var currentUserId = '1';
+		var notes = Notes.find({ userId: currentUserId }, {sort: {updatedAt: -1}}).fetch();
+		console.log('notes - '+JSON.stringify(notes));
+		return notes;
+	},
+	'countNotes': function(){
+		var currentUserId = '1';
+		var countnotes = Notes.find({ userId: currentUserId }).count();
+		return countnotes;
+	}
+});
+
 // Main Js file
 $(document).ready(function(){
 

@@ -18,28 +18,7 @@
 			<a class="btn-floating waves-effect waves-light green"><i class="material-icons">person</i></a><br><br>
 		</div>
 		<div class="col-md-4 notesMain">
-			<div class="row notesNav">
-				<div class="col-md-12 notesMainTitle">
-					<p>NOTES</p>
-				</div>
-				<div class="col-md-8">
-					<p>3 notes</p>
-				</div>
-				<div class="col-md-4 option-dropdown">
-					<p>Options <i class="glyphicon glyphicon-chevron-down"></i></p>				
-				</div>
-			</div>
-			<div class="row notesContent">
-				<ul>
-					<li class="active notesContainer">
-						<div class="row notes">
-							<p class="noteTitle">NoteTitle</p>
-							<p class="noteTime">Note created</p>
-							<p class="noteTyped">NotesContent</p>
-						</div>
-					</li>
-				</ul>
-			</div>
+			{{> viewsNotesList}}
 		</div>
 		<div class="col-md-7 noteEditor">
 			<div class="row noteWritingNav">

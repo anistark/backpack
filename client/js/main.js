@@ -3,8 +3,23 @@ Template.viewsNotes.events({
 		event.preventDefault();
 		var notesEditor = $('#notesEditor').val();
 		console.log('notes - '+ notesEditor);
+		var tagSelected = [];
+		tagSelected.push('tagid1');
+		tagSelected.push('tagid2');
+		var userId = '1';
+		var randomUrl = userId+Math.random().toString(36).slice(2);
 		Notes.insert({
-			notesContent: notesEditor
+			notesTitle: 'Title',
+			notesContent: notesEditor,
+			userId: userId,
+			notebookId: '123',
+			tags: tagSelected,
+			createdAt: new Date(),
+			updatedAt: new Date(),
+			noteUrl: randomUrl,
+			favourites: 1,
+			permissions: '0',
+			lastEditedBy: userId
 		});
 		$('[notesContent=notesEditor]').val('');
 	}

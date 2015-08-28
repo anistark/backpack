@@ -32,7 +32,6 @@ Template.viewsNotesList.helpers({
 		// var currentUserId = Meteor.userId();
 		var currentUserId = '1';
 		var notes = Notes.find({ userId: currentUserId }, {sort: {updatedAt: -1}}).fetch();
-		console.log('notes - '+JSON.stringify(notes));
 		return notes;
 	},
 	'countNotes': function(){
@@ -41,6 +40,11 @@ Template.viewsNotesList.helpers({
 		return countnotes;
 	}
 });
+
+$('#notesContainer').click(function(){
+	console.log('in');
+});
+
 
 // Main Js file
 $(document).ready(function(){

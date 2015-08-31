@@ -41,9 +41,15 @@ Template.viewsNotesList.helpers({
 	}
 });
 
-$('#notesContainer').click(function(){
-	console.log('in');
+Template.viewsNotesList.events({
+	"click [data-action='fetch']": function (event, template) {
+		console.log(this._id);
+	}
 });
+
+// $('#notesContainer').click(function(){
+// 	console.log('in');
+// });
 
 
 // Main Js file

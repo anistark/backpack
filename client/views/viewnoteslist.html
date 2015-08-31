@@ -13,9 +13,9 @@
 	<div class="row notesContent">
 		<ul>
 			{{#each notes}}
-				<li class="notesContainer" id="notesContainer">
+				<li class="notesContainer" id="notesContainer" data-action="fetch">
 					<div class="row notes">
-						<p class="hidden">{{_id}}</p>
+						<p class="hidden" id="noteId">{{_id}}</p>
 						<p class="noteTitle">{{notesTitle}}</p>
 						<p class="noteTime">{{createdAt}}</p>
 						<p class="noteTyped">{{{notesContent}}}</p>

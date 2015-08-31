@@ -4,11 +4,15 @@ Template.viewsNotes.events({
 		var notesEditor = $('#notesEditor').val();
 		console.log('notes - '+ notesEditor);
 		Notes.insert({
-			notesContent: notesEditor
+			noteId : this._id,
+			notesContent: notesEditor,
+			createAt : new Date()
 		});
 		$('[notesContent=notesEditor]').val('');
 	}
 });
+
+
 
 // Main Js file
 $(document).ready(function(){

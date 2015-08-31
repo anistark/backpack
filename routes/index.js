@@ -13,5 +13,10 @@ Router.map(function () {
 		template: 'views/notes'
 	});
 
+	this.route('login',{
+		path: '/login',
+		template: 'views/login'
+	})
+
 });
 

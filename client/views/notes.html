@@ -1,6 +1,6 @@
 <template name="viewsNotes">
 	<form>
-		<textarea name="notesEditor" id="notesEditor"></textarea>
+		<textarea name="notesEditor" id="notesEditor">{{noteContent}}</textarea>
 		<script>
 			CKEDITOR.replace( 'notesEditor',{
 				enterMode : CKEDITOR.ENTER_P,

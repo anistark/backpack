@@ -25,6 +25,13 @@ Template.viewsNotes.events({
 	}
 });
 
+Template.viewsNotes.helpers({
+	'noteContent': function(){
+		var notes = Notes.find({_id: Session.get('noteId')}).fetch();
+		return notes[0].notesContent;
+	}
+});
+
 Meteor.subscribe('notes');
 
 Template.viewsNotesList.helpers({
@@ -43,7 +50,8 @@ Template.viewsNotesList.helpers({
 
 Template.viewsNotesList.events({
 	"click [data-action='fetch']": function (event, template) {
-		console.log(this._id);
+		// console.log(this._id);
+		Session.set('noteId', this._id);
 	}
 });
 

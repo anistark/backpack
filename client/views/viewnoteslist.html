@@ -1,0 +1,27 @@
+<template name="viewsNotesList">
+	<div class="row notesNav">
+		<div class="col-md-12 notesMainTitle">
+			<p>NOTES</p>
+		</div>
+		<div class="col-md-8">
+			<p>{{countNotes}} notes</p>
+		</div>
+		<div class="col-md-4 option-dropdown">
+			<p>Options <i class="glyphicon glyphicon-chevron-down"></i></p>				
+		</div>
+	</div>
+	<div class="row notesContent">
+		<ul>
+			{{#each notes}}
+				<li class="notesContainer" id="notesContainer">
+					<div class="row notes">
+						<p class="hidden">{{_id}}</p>
+						<p class="noteTitle">{{notesTitle}}</p>
+						<p class="noteTime">{{createdAt}}</p>
+						<p class="noteTyped">{{{notesContent}}}</p>
+					</div>
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+</template>

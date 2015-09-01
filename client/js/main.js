@@ -28,7 +28,9 @@ Template.viewsNotes.events({
 Template.viewsNotes.helpers({
 	'noteContent': function(){
 		var notes = Notes.find({_id: Session.get('noteId')}).fetch();
-		return notes[0].notesContent;
+		var content = notes[0].notesContent;
+		console.log('content - '+ content);
+		return content;
 	}
 });
 

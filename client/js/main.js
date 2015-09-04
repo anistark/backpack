@@ -9,11 +9,9 @@ Template.viewsNotes.events({
 		var userId = '1';
 		var randomUrl = userId+Math.random().toString(36).slice(2);
 		Notes.insert({
-<<<<<<< HEAD
 			noteId : this._id,
 			notesContent: notesEditor,
-			createAt : new Date()
-=======
+			createAt : new Date(),
 			notesTitle: 'Title',
 			notesContent: notesEditor,
 			userId: userId,
@@ -25,14 +23,11 @@ Template.viewsNotes.events({
 			favourites: 1,
 			permissions: '0',
 			lastEditedBy: userId
->>>>>>> 5898293af700d5aa9642a26abbd94c1cad78c246
 		});
 		$('[notesContent=notesEditor]').val('');
 	}
 });
 
-<<<<<<< HEAD
-=======
 Meteor.subscribe('notes');
 
 Template.viewsNotesList.helpers({
@@ -52,7 +47,6 @@ Template.viewsNotesList.helpers({
 $('#notesContainer').click(function(){
 	console.log('in');
 });
->>>>>>> 5898293af700d5aa9642a26abbd94c1cad78c246
 
 
 // Main Js file

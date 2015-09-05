@@ -28,6 +28,15 @@ Template.viewsNotes.events({
 	}
 });
 
+Template.viewsNotes.helpers({
+	'noteContent': function(){
+		var notes = Notes.find({_id: Session.get('noteId')}).fetch();
+		var content = notes[0].notesContent;
+		console.log('content - '+ content);
+		return content;
+	}
+});
+
 Meteor.subscribe('notes');
 
 Template.viewsNotesList.helpers({
@@ -44,10 +53,25 @@ Template.viewsNotesList.helpers({
 	}
 });
 
-$('#notesContainer').click(function(){
-	console.log('in');
+Template.viewsNotesList.events({
+	"click [data-action='fetch']": function (event, template) {
+		// console.log(this._id);
+		Session.set('noteId', this._id);
+	}
 });
 
+
+Template.viewsNotebooks.events({
+	'submit form': function(event){
+		event.preventDefault();
+		
+	}
+})
+// $('#notesContainer').click(function(){
+// 	console.log('in');
+// });
+
+Users = new Meteor.Collection('users');
 
 // Main Js file
 $(document).ready(function(){

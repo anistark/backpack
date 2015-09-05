@@ -1,14 +1,14 @@
 <template name="viewsNotesList">
-	<ul>
-		{{#each notes}}
-			<li class="notesContainer" id="notesContainer">
-				<div class="row notes">
-					<p class="hidden">{{_id}}</p>
-					<p class="noteTitle">{{notesTitle}}</p>
-					<p class="noteTime">{{createdAt}}</p>
-					<p class="noteTyped">{{{notesContent}}}</p>
-				</div>
-			</li>
-		{{/each}}
-	</ul>
+		<ul>
+			{{#each notes}}
+				<li class="notesContainer" id="notesContainer">
+					<div class="row notes">
+						<p class="hidden">{{_id}}</p>
+						<p class="noteTitle">{{notesTitle}}</p>
+						<p class="noteTime">{{createdAt}}</p>
+						<p class="noteTyped">{{{notesContent}}}</p>
+					</div>
+				</li>
+			{{/each}}
+		</ul>
 </template>

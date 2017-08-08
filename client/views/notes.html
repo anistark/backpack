@@ -1,5 +1,6 @@
 <template name="viewsNotes">
 	<form>
+		<input type="text" placeholder="Notes Title" id="notesTitle" />
 		<textarea name="notesEditor" id="notesEditor">{{noteContent}}</textarea>
 		<script>
 			CKEDITOR.replace( 'notesEditor',{

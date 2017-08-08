@@ -1,7 +1,16 @@
+Template.viewsHome.helpers({
+	'countNotes': function(){
+		var currentUserId = '1';
+		var countnotes = Notes.find({ userId: currentUserId }).count();
+		return countnotes;
+	}
+});
+
 Template.viewsNotes.events({
 	'submit form': function(event){
 		event.preventDefault();
 		var notesEditor = $('#notesEditor').val();
+		var notesTitle = $('#notesTitle').val();
 		console.log('notes - '+ notesEditor);
 		var tagSelected = [];
 		tagSelected.push('tagid1');
@@ -12,7 +21,7 @@ Template.viewsNotes.events({
 			noteId : this._id,
 			notesContent: notesEditor,
 			createAt : new Date(),
-			notesTitle: 'Title',
+			notesTitle: notesTitle,
 			notesContent: notesEditor,
 			userId: userId,
 			notebookId: '123',
@@ -57,7 +66,10 @@ Template.viewsNotesList.events({
 	"click [data-action='fetch']": function (event, template) {
 		// console.log(this._id);
 		Session.set('noteId', this._id);
-	}
+	},
+	'click #notesDelete': function() {
+    	Notes.remove(this._id);
+  	}
 });
 
 

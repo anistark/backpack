@@ -2,6 +2,16 @@
 		<ul>
 			{{#each notes}}
 				<li class="notesContainer" id="notesContainer">
+					<div class="row noteWritingNav">
+						<div class="col-md-8">
+							<ul>
+								<li><i class="glyphicon glyphicon-time"></i></li>
+								<li><i class="glyphicon glyphicon-star-empty"></i></li>
+								<li><i class="glyphicon glyphicon-info-sign"></i></li>
+								<li class="delete" id="notesDelete"><i class="glyphicon glyphicon-trash"></i></li>
+							</ul>
+						</div>
+					</div>
 					<div class="row notes">
 						<p class="hidden">{{_id}}</p>
 						<p class="noteTitle">{{notesTitle}}</p>

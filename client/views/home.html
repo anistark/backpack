@@ -15,7 +15,7 @@
 			<a class="btn-floating waves-effect waves-light green"><i class="material-icons">book</i></a><br><br>
 			<a class="btn-floating waves-effect waves-light green"><i class="material-icons">loyalty</i></a><br><br>
 			<hr>
-			<a class="btn-floating waves-effect waves-light green"><i class="material-icons">person</i></a><br><br>
+			<a class="btn-floating waves-effect waves-light green" href="/login"><i class="material-icons">person</i></a><br><br>
 		</div>
 		<div class="col-md-4 notesMain">
 			<div class="row notesNav">
@@ -23,7 +23,7 @@
 					<p>NOTES</p>
 				</div>
 				<div class="col-md-8">
-					<p>3 notes</p>
+					<p>{{countNotes}} Notes</p>
 				</div>
 				<div class="col-md-4 option-dropdown">
 					<p>Options <i class="glyphicon glyphicon-chevron-down"></i></p>				
@@ -34,19 +34,11 @@
 			</div>
 		</div>
 		<div class="col-md-7 noteEditor">
-			<div class="row noteWritingNav">
-			<div class="col-md-8">
-				<ul>
-					<li><i class="glyphicon glyphicon-time"></i></li>
-					<li><i class="glyphicon glyphicon-star-empty"></i></li>
-					<li><i class="glyphicon glyphicon-info-sign"></i></li>
-					<li class="delete"><i class="glyphicon glyphicon-trash"></i></li>
-				</ul>
-			</div>
+			
 			<div class="col-md-4">
 				
 			</div>
-			</div>
+			
 			<h5>{{notesTitle}}</h5>
 			{{> viewsNotes}}
 		</div>
